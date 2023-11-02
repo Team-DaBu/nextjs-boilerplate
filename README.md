@@ -63,3 +63,4 @@ yarn build-storybook
 
 - Set up redux boilerplate with Clean Architecture
 - Set up Husky, lint-staged
+- Set up emotion
