@@ -53,3 +53,4 @@ yarn test:coverage
 ## TO-DO
 
 - Set up Storybook
+- Set up Husky, lint-staged
