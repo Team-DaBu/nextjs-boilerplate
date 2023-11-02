@@ -3,7 +3,10 @@
 ## 요구사항
 
 이 프로젝트는 Node.js 18 이상의 런타임이 필요합니다.
-패키지 매니저는 Yarn 을 사용합니다.
+패키지 매니저는 Yarn Berry 를 사용합니다.
+
+현재 Storybook 의 호환성 이슈로 인해
+Yarn Berry 의 NodeLinker 모드는 node-modules 로 설정되어 있습니다.
 
 ## 커맨드
 
@@ -33,6 +36,12 @@ yarn test:ci
 
 # Jest 테스트 커버리지 보기
 yarn test:coverage
+
+# Storybook 개발 서버 시작
+yarn storybook
+
+# Storybook 배포를 위한 빌드하기
+yarn build-storybook
 ```
 
 ## 적용 된 기술 스택
@@ -52,5 +61,5 @@ yarn test:coverage
 
 ## TO-DO
 
-- Set up Storybook
+- Set up redux boilerplate with Clean Architecture
 - Set up Husky, lint-staged
