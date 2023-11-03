@@ -46,7 +46,7 @@ yarn build-storybook
 
 ## 적용 된 기술 스택
 
-- Next.js 14 이상
+- Next.js 14 이상 with App Route
 - Redux with Redux-Toolkit
 - TDD
   - Unit Test (Jest)
@@ -61,6 +61,5 @@ yarn build-storybook
 
 ## TO-DO
 
-- Set up redux boilerplate with Clean Architecture
 - Set up Husky, lint-staged
 - Set up emotion
