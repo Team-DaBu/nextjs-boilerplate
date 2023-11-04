@@ -1,5 +1,8 @@
 {
+  "root": true,
   "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
     "airbnb",
     "airbnb/hooks",
@@ -7,10 +10,13 @@
     "plugin:prettier/recommended",
     "plugin:storybook/recommended"
   ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
@@ -19,6 +25,8 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", { "props": false }]
   }
 }
