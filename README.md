@@ -1,4 +1,4 @@
-비사이드 17기 2팀의 Next.js 보일러 플레이트입니다
+# 비사이드 17기 2팀의 Next.js 보일러 플레이트입니다
 
 ## 요구사항
 
@@ -9,8 +9,6 @@
 Yarn Berry 의 NodeLinker 모드는 node-modules 로 설정되어 있습니다.
 
 ## 커맨드
-
-아래와 같은 명령어가 있습니다.
 
 ```zsh
 # 개발 서버
@@ -44,7 +42,7 @@ yarn storybook
 yarn build-storybook
 ```
 
-## 적용 된 기술 스택
+## 적용 기술 스택
 
 - Next.js 14 이상 with App Route
 - Redux with Redux-Toolkit
@@ -53,13 +51,15 @@ yarn build-storybook
   - E2E Test (Playwright)
   - UI Test (Storybook)
 - Convention
-  - ESLINT
+  - ESLint
     - Airbnb Rule
-  - PRETTIER
+    - and some customizes
+  - Prettier
+  - Husky
+  - lint-staged
 - Style
-  - TailwindCSS
+  - Tailwind CSS
 
 ## TO-DO
 
-- Set up Husky, lint-staged
 - Set up emotion
