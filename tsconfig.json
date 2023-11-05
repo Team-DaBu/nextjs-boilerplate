@@ -19,7 +19,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/application": ["./src/application/*"],
+      "@/entities": ["./src/application/entities/*"],
+      "@/usecases": ["./src/application/usecases/*"],
+      "@/infrastructure": ["./src/infrastructure/*"],
+      "@/interface": ["./src/infrastructure/interface/*"],
+      "@/api": ["./src/api/*"],
+      "@/hooks": ["./src/hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "postcss.config.js", "next.config.js"],
