@@ -13,11 +13,6 @@
       "pre-push": ".husky/pre-push"
     }
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "yarn lint --fix"
-    ]
-  },
   "scripts": {
     "postinstall": "husky install",
     "dev": "next dev",
