@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@/components": ["./src/component/*"],
       "@/application": ["./src/application/*"],
       "@/entities": ["./src/application/entities/*"],
       "@/usecases": ["./src/application/usecases/*"],
