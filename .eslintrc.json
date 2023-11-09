@@ -8,7 +8,9 @@
     "airbnb/hooks",
     "airbnb-typescript",
     "plugin:prettier/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/react"
   ],
   "plugins": ["@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
