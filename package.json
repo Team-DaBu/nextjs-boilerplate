@@ -27,10 +27,14 @@
     "test-storybook": "test-storybook",
     "test-storybook:coverage": "test-storybook --coverage",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=%CHROMATIC_PROJECT_TOKEN%"
+    "chromatic:local": "cross-env NODE_ENV=development dotenv -e .env.local -- cross-var npx chromatic --project-token=%CHROMATIC_TOKEN%",
+    "chromatic:ci": "cross-env NODE_ENV=production dotenv -e .env.production -- cross-var npx chromatic --project-token=%CHROMATIC_TOKEN%"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
+    "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.3.0",
     "next": "14.0.1",
     "next-redux-wrapper": "^8.1.0",
     "react": "^18",
