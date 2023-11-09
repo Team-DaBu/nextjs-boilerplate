@@ -15,6 +15,10 @@
 !.yarn/sdks
 !.yarn/versions
 
+# storybook log
+chromatic.log
+build-storybook.log
+
 # testing
 /coverage
 
